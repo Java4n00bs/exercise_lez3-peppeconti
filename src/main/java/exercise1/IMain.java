@@ -3,6 +3,17 @@ package exercise1;
 public class IMain {
     public static void main(String[] args) {
 
+      Impiegato impiegato1 = new Impiegato("Marco", "Verdi", 5000);
+      Impiegato impiegato2 = new Impiegato("Mario", "Bianchi", 22000);
+
+      impiegato1.aumentaSalario(10);
+
+      if (impiegato1.salario > impiegato2.salario) {
+        System.out.println("L'impiegato " + impiegato1.nome + " " + impiegato1.cognome + " guadagna più dell'impiegato " + impiegato2.nome + " " + impiegato2.cognome +".");
+      } else {
+        System.out.println("L'impiegato " + impiegato1.nome + " " + impiegato1.cognome + " NON guadagna più dell'impiegato " + impiegato2.nome + " " + impiegato2.cognome +".");
+      }
+
     }
 }
 
