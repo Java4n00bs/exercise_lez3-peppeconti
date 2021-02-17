@@ -19,7 +19,7 @@ class ExercisesTest extends AnyFlatSpec with Matchers {
 
   "Impiegato" should "earn lots of money" in {
 
-    val i = new Impiegato("Gigi", "cognome", 1300.0)
+    val i = new Impiegato("Gigi", "cognome", 1300)
 
     i.dettagli().contains("Gigi") shouldBe true
     i.dettagli().contains("cognome") shouldBe true
